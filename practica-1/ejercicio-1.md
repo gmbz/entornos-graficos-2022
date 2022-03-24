@@ -21,7 +21,8 @@
 - El cuerpo es el documento que ve el usuario, va encerrado en ``<body> </body>``.
 
 ###  En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado?  ¿y obsoleto?
-
+Un elemento o atributo desaprobado es aquel que ha quedado anticuado por la presencia de estructuras nuevas. Los elementos desaprobados pueden declararse obsoletos en el futuro.  Los agentes de usuario deberían seguir dando soporte a los elementos desaprobados por razones de compatibilidad.
+Un elemento o atributo obsoleto es aquél para el cual no hay garantía de soporte por parte de un agente de usuario.
 
 ### Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
 

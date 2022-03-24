@@ -17,9 +17,359 @@
 
 <h1>Ejercicio b</h1>
 
+<!-- Etiqueta p que muestra el texto imagen1 ya que la imagen que quiere mostrar no existe localmente, y muestra un link a la pagina de google -->
 <p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+<!-- Una tag p con una etiqueta a que muestra un link a la pagina de google y dentro de dicha etiqueta hay otra de tipo img que muestra el
+texto imagen1 ya que la imagen que intenta mostrar no existe localmente. Entonces el link se muestra con el texto
+"imagen1". Luego, un texto "Click aquí" en la misma etiqueta p-->
 <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<!-- Una tag p que contiene una tag a con un link a google, dentro de la tag a hay una tag img que muestra el texto "ima gen1" 
+ya que no puede mostrar la imagen porque no existe localmente, seguido del texto "Click aquí", por lo que el texto del link
+consiste en "ima genClick Aquí" -->
 <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima
 gen1" />Click aquí</a></p>
+<!-- Una tag p que contiene una tag a con un link a google, el texto del ling es "imagen1" ya que la tag img intenta mostrar una 
+imagen que no existe localmente. Luego, otra etiqueta a contenida en la tag p que lleva a google con el texto "Click aquí" -->
 <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a
 href="http://www.google.com.ar">Click aquí</a></p>
+
+<hr>
+
+<h1>Ejercicio c</h1>
+
+<!-- Lista no ordenada que contiene 3 list items: xxx, yyy, zzz -->
+<ul>  
+  <li>xxx</li>
+  <li>yyy</li>
+  <li>zzz</li>
+</ul>
+<!-- Lista ordenada que contiene 3 list items: 1)xxx, 2)yyy, 3)zzz -->
+<ol>
+	<li>xxx</li>
+	<li>yyy</li>
+	<li>zzz</li>
+</ol>
+<!-- Tres listas ordenadas, cada una contiene solo un item list.
+La primera muestra: 1. xxx 
+La segunda muestra: 2. yyy, ya que el atributo value="2" le asigna el indice 2 al item list
+La tercera muestra: 3. zzz,  que el atributo value="3" le asigna el indice 3 al item list-->
+<ol>
+	<li>xxx</li>
+</ol>
+<ol>
+	<li value="2">yyy</li>
+</ol> 
+<ol>
+	<li value="3">zzz</li>
+</ol> 
+<!-- Caja en bloque que contiene una tag p, que muestra el texto "1. xxx" y luego deja un renglón con la tag br,
+muestra "2. yyy" y luego deja un renglón con la tag br y finalmente muestra "3. zzz" -->
+<blockquote>
+	<p>1. xxx<br />
+	2. yyy<br />
+	3. zzz</p>
+</blockquote>
+
+<hr>
+
+<h1>Ejercicio d</h1>
+
+<!-- Muestra una tabla con el borde de grosor 1 y ancho de 300px 
+La primer fila consiste en el encabezado de la tabla y muestra en la columna 1 "Columna 1" y en la columna 2 "Columna 2"
+La segunda fila consiste en el cuerpo de la tabla y muestra en la primer columna "Celda 1" y en la segunda columna "Celda 1"
+la tercer fila tambien es parte del cuerpo de la tabla y muestra en la primer columna "Celda 3" y en la segunda columna "Celda 4"
+-->
+<table border="1" width="300">
+	<tr>
+	<th>Columna 1</th>
+	<th>Columna 2</th>
+	</tr>
+	<tr>
+	<td>Celda 1</td>
+	<td>Celda 2</td>
+	</tr>
+	<tr> 
+	<td>Celda 3</td>
+	<td>Celda 4</td>
+	</tr>
+</table>
+<!-- Muestra una tabla con el borde de grosor 1 y ancho de 300px 
+La primer fila consiste en el encabezado de la tablay muestra en la primer columna "Colum na1",
+La tag td que corresponde a la primer columna de esta fila contiene un div para centrar el texto
+y una tag strong para ponerlo en negrita, todo esto no surte efecto ya que el encabezado de la 
+tabla tiene ese estilo de forma estandar.
+La segunda columna del encabezado muestra "Columna 2" y pasa lo mismo que la anterior columna con 
+el estilo
+La segunda fila consiste en el cuerpo de la tabla y muestra en la primer columna "Celda 1" y en la segunda columna "Celda 1"
+la tercer fila tambien es parte del cuerpo de la tabla y muestra en la primer columna "Celda 3" y en la segunda columna "Celda 4"
+-->
+<table border="1" width="300">
+	<tr>
+	<td><div align="center"><strong>Colum
+	na1</strong></div></td>
+	<td><div align="center"><strong>Columna
+	2</strong></div></td>
+	</tr>
+	<tr>
+	<td>Celda 1</td>
+	<td>Celda 2</td> 
+	</tr>
+	<tr>
+	<td>Celda 3</td>
+	<td>Celda 4</td>
+	</tr>
+</table>
+
+<hr>
+
+<h1>Ejercicio e</h1>
+<!-- Una tabla de ancho 200px con una tag caption con el texto Titulo, lo cual es el titulo o leyenda
+de la tabla. La tabla no contiene encabezado. La fila 1 tiene 3 columnas con el fondo de color #dddddd 
+y un espacio en blanco
+La fila 2 contiene lo mismo que la fila 1-->
+<table width="200">
+	<caption>
+		Título 
+	</caption>
+	<tr>
+	<td bgcolor="#dddddd">&nbsp;</td>
+	<td bgcolor="#dddddd">&nbsp;</td>
+	<td bgcolor="#dddddd">&nbsp;</td>
+	</tr>
+	<tr>
+	<td bgcolor="#dddddd">&nbsp;</td>
+	<td bgcolor="#dddddd">
+	&nbsp;</td>
+	<td bgcolor="#dddddd">&nbsp;</td>
+	</tr>  
+</table> 
+<!-- Una tabla de ancho 200px. La primer fila contiene una sola columna con el texto
+"Título" centrado con un div y ocupa el ancho de 3 columnas.
+La segunda fila contiene 3 columnas con el fondo de color #dddddd y un espacio en blanco
+La tercer fila es lo mismo que la fila 2-->
+<table width="200">
+	<tr>
+		<td colspan="3">
+			<div align="center">Título</div>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#dddddd">&nbsp;</td>
+		<td bgcolor="#dddddd">&nbsp;</td>
+		<td bgcolor="#dddddd">&nbsp;</td>
+	</tr>
+	<tr>
+		<td bgcolor="#dddddd">&nbsp;</td>
+		<td bgcolor="#dddddd">&nbsp;</td>
+		<td bgcolor="#dddddd">&nbsp;</td>
+	</tr>
+</table>
+
+<hr>
+
+<h1>Ejercicio f</h1>
+<!-- Una tabla de ancho 200px. primer fila contiene una sola columna con el texto
+"Título" centrado con un div y ocupa el ancho de 3 columnas.
+La segunda fila contiene 3 columnas, la primer columna ocupa dos filas (la segunda y la tercera) 
+y tiene el fondo de color dddddd, las otras dos columnas solo tienen el fondo del mismo color.
+Las tres columnas contienen un espacio en blanco.
+La tercer fila, tiene 3 columnas, la primer columna es la misma que la fila anterior y las 
+otras dos contienen el fondo de color dddddd y un espacio en blanco.-->
+<table width="200">
+	<tr>
+		<td colspan="3">
+			<div align="center">Título</div>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+		<td bgcolor="#dddddd">&nbsp;</td>
+		<td bgcolor="#dddddd">&nbsp;</td>
+	</tr>
+	<tr>
+		<td bgcolor="#dddddd">&nbsp;</td>
+		<td bgcolor="#dddddd">&nbsp;</td>
+	</tr>
+</table>
+<!-- Una tabla de ancho 200px. primer fila contiene una sola columna con el texto
+"Título" centrado con un div y ocupa el ancho de 3 columnas. 
+La primer fila contiene dos columnas, la primera ocupa el ancho de dos columnas, ambas tienen
+el fondo de color dddddd y un espacio en blanco.
+La tercer fila tiene tres columnas de fondo de color dddddd y un espacio en blanco-->
+<table width="200">
+	<tr>
+		<td colspan="3">
+			<div align="center">Título</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+		<td bgcolor="#dddddd">&nbsp;</td>
+	</tr>
+	<tr>
+		<td bgcolor="#dddddd">&nbsp;</td>
+		<td bgcolor="#dddddd">&nbsp;</td>
+		<td bgcolor="#dddddd">&nbsp;</td>
+	</tr>
+</table> 
+
+<hr>
+
+<h1>Ejercicio g</h1>
+<!-- Una tabla de ancho 200px y bordes de grosor 1. primer fila contiene una sola columna con el texto
+"Título" centrado con un div y ocupa el ancho de 3 columnas. La segunda fila contiene una columna
+que ocupa el alto de dos filas y el ancho de dos columnas con un espacio en blanco y otra columna con un espacio en blanco.
+La tercer fila contiene una columna que viene de la fila anterior y otra con un espacio
+en blanco y que ocupa la mitad del ancho de la tabla, por lo que la misma columna pero de las
+demas filas tambien ocupan el mismo ancho
+ -->
+<table width="200" border="1">
+	<tr>
+		<td colspan="3">
+			<div align="center">Título</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"rowspan="2">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="50%">&nbsp;</td>
+	</tr>
+</table>
+<!-- Una tabla de ancho 200px y bordes de grosor 1, con un espaciado entre celdas de 0 y un
+espaciado dentro de la celda de 0. La primer fila contiene una sola columna con el texto
+"Título" centrado con un div y ocupa el ancho de 2 columnas. 
+La segunda fila contiene dos columnas, la primera ocupa un alto de dos filas, por lo que se
+extiene a la fila de abajo, todas las columnas contienen un espacio en blanco.
+La tercer fila contiene la columna de la fila anterior y otra columna que ocupa la mitad de la tabla
+por lo que las mismas columas pero de distintas filas ocupan tambien el mismo ancho.-->
+<table width="200" border="1" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="2">
+			<div align="center">Título</div>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="50%">&nbsp;</td>
+	</tr>
+</table> 
+
+<hr>
+
+<h1>Ejercicio g</h1>
+<!-- Un formulario con id=form1, un nombre=form1, que al enviarlo redirecciona a procesar.php y lo abre en otra pestaña.
+Contiene una tag fieldset que permite organizar en grupos los campos de un formulario, con la leyenda LOGIN.
+Los campos del formulario son:
+	Usuario: Es un input de tipo texto con id=usu1 y nombre=usu1, con valor por defecto "xxx", luego una tag br para saltar de linea
+ 	Clave: es un input de tipo password con id=clave1 y nombre=clave1, el valor que tiene por defecto es "xxx"
+Luego, un input para el boton enviar-->
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+	<fieldset>
+		<legend>LOGIN</legend>
+			Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+			Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+	</fieldset>
+	<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+<!-- Un formulario con id=form2, un nombre=form2, al enviarlo no va a ningun lado, method=get 
+	Muestra un texto LOGIN sin el fieldset y luego un br para salto de linea.
+	Los campos del formulario son:
+	Usuario: una tag label representa una etiqueta para un elemento en una interfaz de usuario y un input 
+	de tipo texto con id=usu1 y nombre=usu1, sin valor por defecto, luego una tag br para saltar de linea.
+ 	Clave: una tag label y un input de tipo password con id=clave2 y nombre=clave2, sin valor por defecto
+Luego, un input para el boton enviar
+-->
+<form id="form2" name="form2" action="" method="get" target="_blank">
+	LOGIN<br />
+	<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+	<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+	<input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+<!-- Un formulario con id=form3, un nombre=form3, que envia el formulario al correo xx@xx.com 
+Contiene una tag fieldset que permite organizar en grupos los campos de un formulario, con la leyenda LOGIN.
+Los campos del formulario son:
+	Usuario: Es un input de tipo texto con id=usu3 y nombre=usu3, sin valor por defecto, luego una tag br para saltar de linea
+ 	Clave: es un input de tipo password con id=clave3 y nombre=clave3, sin valor por defecto
+Luego, un input para el boton enviar
+-->
+<form id="form3" name="form3" action="mailto:xx@xx.com" enctype=text/plain method="post" target="_blank"> 
+	<fieldset>
+		<legend>LOGIN</legend>
+		Usuario: <input type="text" id="usu3" name="usu3" /><br />
+		Clave: <input type="password" id="clave3" name="clave3" />
+	</fieldset>
+	<input type="reset" id="boton3" name="boton3" value="Enviar" />
+</form>
+
+<hr>
+
+<h1>Ejercicio i</h1>
+<!-- Una tag label con el texto "Boton 1" que luego muestra un boton de html en el que hay una imagen
+logo.jpg pero como esa imagen no existe localmente, muestra el texto "Botón con imagen", el tamaño de la
+imagen es 30px de ancho y 20px de alto. Luego un texto en negrita dentro del boton que dice "Click aqui" -->
+<label>Botón 1
+	<button type="button" name="boton1" id="boton1">
+	<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+	<b>CLICK AQUÍ</b></button>
+</label> 
+
+<br>
+<!-- Una tag label con el texto "Boton 2" luego muestra un input de tipo boton con el texto
+"Click aquí"-->
+<label>Botón 2
+	<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+
+<hr>
+
+<h1>Ejercicio j</h1>
+<!-- Una tag p que contiene una tag label con i input de tipo radio con el texto "X", luego un br para salto de linea.
+Y otra tag label con un input de tipo radio con el texto "Y". Los inputs tienen el mismo nombre
+por lo que solo se puede seleccionar uno-->
+<p>
+	<label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+	<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label>
+</p> 
+<!-- Lo mismo que lo anterior, solo cambia el nombre de los inputs, por lo que se pueden seleccionar
+los dos radios al mismo tiempo -->
+<p>
+	<label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+	<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label>
+</p>
+
+
+<hr>
+
+<h1>Ejercicio k</h1>
+<!-- Una tag select que al hacer click muestra una lista de opciones para seleccionar, dentro
+tiene un grupo de opciones con la tag optgroup con el nombre "Caso 1" que contiene las opciones "Mayo" y "Junio" y tiene
+otra tag optgroup con el nombre "Caso 2" que contiene las opciones "Mayo" y "Junio"-->
+<select name="lista">
+	<optgroup label="Caso 1">
+		<option>Mayo</option>
+		<option>Junio</option>
+	</optgroup>
+	<optgroup label="Caso 2">
+		<option>Mayo</option>
+		<option>Junio</option>
+	</optgroup>
+</select>
+
+<br> <br>
+<!-- Lo mismo que lo anterior, pero con la diferencia que en vez de hacer click y que te 
+muestre la lista, te muestra la lista directamente con un scroller-->
+<select name="lista[]" multiple="multiple">
+	<optgroup label=" Caso 1">
+	<option>Mayo</option>
+	<option>Junio</option>
+	</optgroup>
+	<optgroup label=" Caso 2">
+	<option>Mayo</option>
+	<option>Junio</option>
+	</optgroup>
+</select> 
