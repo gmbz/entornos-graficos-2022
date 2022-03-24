@@ -1,0 +1,94 @@
+<!-- Es un comentario, no se muestra en la pantalla al ejecutar el archivo.
+Puede estar en cualquier parte del código -->
+<!-- Código controlado el día 12/08/2009 -->
+
+<!-- Es una caja que contiene el texto "Contenido del bloque1".
+Debe estar dentro del body
+Etiqueta: div
+Atributos: id, no es obligatorio-->
+<div id="bloque1">Contenido del bloque1</div>
+
+<!-- Este elemento muestra una imagen, pero al no indicarse la fuente de la imagen muestra
+el texto alternativo "lugar imagen", puede estar en el body 
+Etiqueta: img, no tiene etiqueta de cierre. No es pareada
+Atributos:
+  src: donde va la fuente de la imagen, es obligatorio
+  alt: texto alternativo si la imagen no puede mostrarse, no es obligatorio.
+	id: id del elemento, no es obligatorio
+	name: nombbre del elemento, no es obligatorio 
+	width: ancho de la imagen, no es obligatorio
+	height: alto de la imagen, no es obligatorio-->
+<img
+  src=""
+  alt="lugar imagen"
+  id="im1"
+  name="im1"
+  width="32"
+  height="32"
+  longdesc="detalles.htm"
+/>
+
+<!-- Elemento que no muestra nada en la pantalla, sirve para aportar información sobre el documento, debe estar en el head
+Etiqueta: meta, no es pareada
+Atributos:
+	name: nombre del elemento
+	lang: lenguaje del elemento
+	content: datos que se asocian al elemento
+	http-equiv: aporta información sobre los encabezado de respuesta HTTP, puede usarse en lugar de name.-->
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+<!-- Elemento que muestra un link con el texto "Resumen HTML", debe estar en el body.
+Etiqueta: a, tiene etiqueta de cierre, es pareada.
+Atributos:
+	href: donde se indica la direccion donde va a redireccionar el link, es obligatorio
+	type
+	hreflang
+	charset
+	rel -->
+<a
+  href="http://www.e-style.com.ar/resumen.html"
+  type="text/html"
+  hreflang="es"
+  charset="utf-8"
+  rel="help"
+  >Resumen HTML
+</a>
+
+<!-- Elemento que muestra una tabla con datos, debe estar en el body 
+Etiquetas:
+	table: indica el inicio de la tabla, debe cerrarse, es obligatorio
+	caption: le da el titulo a la tabla, debe cerrarse, no es obligatorio
+	tr: define una fila de celdas en una tabla, debe cerrarse
+	th: define una celda como encabezado de un grupo de celdas en una tabla
+	td: define la celda de una tabla que contiene datos
+Atributos:
+	width: indica el ancho de la tabla
+	summary: define un texto alternativo para describir una tabla en un usuario incapaz de mostrarlo
+	align: indica como va a encontrarse alineada la tabla respecto al contenido del documento 
+	scope: define las celdas a las que se refiere la cbecera. Puede tener los siguientes valores: row, col, rowgroup, colgroup, auto
+		 -->
+
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+  <caption align="top">
+    Título
+  </caption>
+  <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">A</th>
+    <th scope="col">B</th>
+    <th scope="col">C</th>
+  </tr>
+  <tr>
+    <th scope="row">1º</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">2º</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
