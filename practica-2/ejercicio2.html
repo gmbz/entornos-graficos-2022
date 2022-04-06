@@ -1,0 +1,46 @@
+<style>
+  /* Regla de css que se aplica a solo a tags <p> con el id "normal". El selector es p#normal, es un selector combinado de tipo y de ID*/
+  p#normal {
+    /* Esta regla tiene 3 declaraciones:
+    font-family que cambia la fuente de la letra al valor arial
+    font-size que cambia el tamaño de la letra a 11px en este caso
+    font-weight que cambia al grosor de la letra, en este caso el grosor es bold(negrita)
+    */
+    font-family: arial, helvetica;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  /* Esta regla se aplica a todas las tags con el id "destacado". El selector es *#destacado*, es un selector combinado de tipo y de ID */
+  *#destacado {
+    /* Tiene 3 declaraciones:
+    border-style que cambia el estilo del borde que se le aplica a la tag, en este caso el valor es solid.
+    border-color que cambia el color del borde, el valor en este caso es azul.
+    borter-width que cambia el grosor del borde a 2px en este caso.
+    */
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+  }
+  /* Esta regla se aplica a todas las tags con el id "distinto". El selector es #distinto*, es un selector de ID */
+  #distinto {
+    /* Tiene 2 declaraciones:
+    background-color que cambia el color del fondo de la tag, el valor es 9ec7eb.
+    color que cambia el color de la letra de la tag a rojo en este caso.
+    */
+    background-color: #9ec7eb;
+    color: red;
+  }
+</style>
+
+<!-- En la siguiente etiqueta <p> se aplica el estilo dado por el selector p#normal -->
+<p id="normal">Este es un párrafo</p>
+<!-- En la siguiente etiqueta <p> se aplica el estilo dado por el selector *#destacado -->
+<p id="destacado">Este es otro párrafo</p>
+<!-- A la tabla se le aplica el estilo dado por el selector *#destacado -->
+<table id="destacado">
+  <tr>
+    <td>Esta es una tabla</td>
+  </tr>
+</table>
+<!-- En la siguiente etiqueta <p> se aplica el estilo dado por el selector #distinto -->
+<p id="distinto">Este es el último párrafo</p>

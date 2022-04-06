@@ -1,0 +1,44 @@
+<style>
+  /*  Esta regla se aplica a todas las tags <p> que tengan la clase "quitar". El selector es p.quitar, es un selector de tipo combinado con un selector de clase*/
+  p.quitar {
+    /*  Tiene 1 declaracion: 
+    color que cambia el color de la letra de la tag, en este caso a rojo.
+    */
+    color: red;
+  }
+  /* Esta regla se aplica a todas las tags que tengan la clase "desarrollo". El selector es *.desarrollo, es un selector combinado de tipo y clase */
+  *.desarrollo {
+    /* Tiene 1 declaracion: 
+    font-size que cambia el tamaño de la letra, en este caso a 8px 
+    */
+    font-size: 8px;
+  }
+  /* Esta regla se aplica a todas las tags que tengan la clase "importante". El selector es .importante, es un selector de clase */
+  .importante {
+    font-size: 20px;
+  }
+</style>
+
+<!-- A esta tag se le aplica es estilo dado por el selector *.desarrollo, por lo que también se le aplica a las tags hijas -->
+<p class="desarrollo">
+  En este primer párrafo trataremos lo siguiente:
+  <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<!-- A esta tag se le aplica el estilo dado por el selector p.quitar, por lo que tambien se le aplica a la tag hija -->
+<p class="quitar">
+  Este párrafo debe ser quitado de la obra... <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<!-- A la siguiente tag no se le aplica ningún estilo -->
+<p>
+  En este otro párrafo trataremos otro tema:<br />
+  xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<!-- A la siguiente tag se le aplica el estilo dado por el selector .importante, por lo que tambien se le aplica a las tags hijas -->
+<p class="importante">
+  Y este es el párrafo más importante de la obra...
+  <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<!-- Este h1 tiene la clase "quitar" pero dicha regla solo hace efecto en las tags <p> ya que en el selector se indica eso, por lo que este h1 no tiene ningun estilo -->
+<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+<!-- Al siguiente <p> se le aplican dos estilos, uno dado por el selector p.quitar y otro dado por el .importante, por lo que surten efecto las dos reglas -->
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p>

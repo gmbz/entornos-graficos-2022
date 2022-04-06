@@ -1,0 +1,71 @@
+<style>
+  * {
+    color: green;
+  }
+  /* Regla que define una pseudoclase link para la tag <a>, que aplica el estilo cuando el enlace no fue visitado todavía*/
+  a:link {
+    color: gray;
+  }
+  /* Regla que define una pseudoclase visited para la tag <a>, que aplica el estilo cuando el enlace ya fue visitado */
+  a:visited {
+    color: blue;
+  }
+  /* Regla que define una pseudoclase hover para la tag <a>, que aplica el estilo cuando se pasa el cursor por el enlace */
+  a:hover {
+    color: fuchsia;
+  }
+  /* Regla que define una pseudoclase active para la tag <a>, que aplica el estilo cuando se pulsa el enlace */
+  a:active {
+    color: red;
+  }
+  p {
+    font-family: arial, helvetica;
+    font-size: 10px;
+    color: black;
+  }
+  .contenido {
+    font-size: 14px;
+    font-weight: bold;
+  }
+</style>
+
+<!-- Las pseudoclases aplican el estilo automaticamente, es decir, no es necesario
+definir las clases dentro de las tags en el html ya que se aplica sin indicarlo
+-->
+<body>
+  <!-- A esta tag se le aplica el contenido del selector .contenido -->
+  <p class="contenido" style="font-weight: normal">
+    Este es un texto ...............
+  </p>
+  <table>
+    <tr>
+      <td>Y esta es una tabla.......</td>
+    </tr>
+    <tr>
+      <!-- A la tag <a> se le aplica el estilo de todas las pseudoclases que estan en el css
+			y que su selectores comienzan con a: y se aplica automaticamente sin necesidad de 
+			indicar nada dentro de la etiqueta
+			-->
+      <td><a href="http://www.google.com.ar">con un enlace</a></td>
+    </tr>
+  </table>
+</body>
+
+<!-- A este body se le aplica el estilo indicado en el selector .contenido, 
+por lo que todo lo que esté dentro del body tambien tendrá dicho estilo
+-->
+<body class="contenido">
+  <p>Este es un texto................</p>
+  <table>
+    <tr>
+      <td>Y esta es una tabla.......</td>
+    </tr>
+    <tr>
+      <!-- A la tag <a>, aún estando dentro del body y heredando dicho estilo,
+			también se le aplica el estilo de todas las pseudoclases pisando los estilos 
+			del body
+			-->
+      <td><a href="http://www.google.com.ar">con un enlace</a></td>
+    </tr>
+  </table>
+</body>

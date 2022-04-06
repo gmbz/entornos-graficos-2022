@@ -1,0 +1,67 @@
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: red;
+  }
+  p [href] {
+    color: black;
+  }
+  ul li#ultimo {
+    color: yellow;
+  }
+  ul li [href] {
+    color: blue;
+  }
+  #importante {
+    color: green;
+  }
+  h1 #importante,
+  h2 #importante,
+  h3 #importante,
+  h4 #importante,
+  h5 #importante,
+  h6 #importante {
+    color: red;
+  }
+  h1[title] {
+    color: blue;
+  }
+  ol a:link {
+    color: blue;
+    text-decoration: none;
+  }
+  ol a:visited {
+    color: blueviolet;
+  }
+</style>
+
+<body>
+  <h1>TITULO</h1>
+  <h2>TITULO2</h2>
+  <p>
+    <a href="#">ENLACE</a>
+  </p>
+  <ul>
+    <li>LI 1</li>
+    <li><a href="#">ENLACE AZUL</a></li>
+    <li id="ultimo">LI 3</li>
+  </ul>
+  <h1>
+    <p id="importante">IMPORTANTE DENTRO DE H1</p>
+  </h1>
+  <h2>
+    <p id="importante">IMPORTANTE DENTRO DE H2</p>
+  </h2>
+
+  <p id="importante">IMPORTANTE FUERA DE TITULO</p>
+  <h1 title="H1 CON TITLE">H1 CON TITLE</h1>
+
+  <ol>
+    <li><a href="#asd">ENLACE 1</a></li>
+    <li><a href="#">ENLACE 2</a></li>
+  </ol>
+</body>
