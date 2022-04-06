@@ -22,7 +22,7 @@ h1 {
 }
 ```
 
-La regla se abre con un selector (en-US). Este selecciona el elemento HTML que vamos a diseñar. En este caso, diseñaremos encabezados de nivel uno (<h1>).
+La regla se abre con un selector (en-US). Este selecciona el elemento HTML que vamos a diseñar. En este caso, diseñaremos encabezados de nivel uno (`<h1>`).
 
 Luego tenemos un conjunto de llaves { }. Entre estas habrá una o más declaraciones, que tomarán la forma de pares de propiedad y valor. Cada par especifica cada una de las propiedades de los elementos seleccionados y el valor que queremos dar a esa propiedad.
 
