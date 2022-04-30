@@ -19,7 +19,7 @@
 > Variables, tipos, operadores, expresiones, estructuras de control - PHP: arrays, funciones
 
 - [Enunciado](/practica-4/UTN_Entornos_Gr%C3%A1ficos_Pr%C3%A1ctica4.pdf)
-- [Resolucion]() - **NO HECHO**
+- [Resolucion](/practica-4/)
 
 ## Practica 5 - PHP
 
