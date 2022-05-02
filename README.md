@@ -26,7 +26,7 @@
 > PHP: función mail(), variables de sesión  
 
 - [Enunciado](/practica-5/UTN_Entornos_Gr%C3%A1ficos_EnunciadoPractica_5.pdf)
-- [Resolucion]() - **NO HECHO**
+- [Resolucion](/practica-5/)
 
 ## Practica 6 - MANEJO DE BASES DE DATOS CON PHP
 
