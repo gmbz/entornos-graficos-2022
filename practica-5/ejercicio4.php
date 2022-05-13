@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +13,7 @@
 
 <body>
     <?php
-        session_start();
+        
         if (!isset($_SESSION['count'])) {
             $_SESSION['count'] = 1;
         } else {
