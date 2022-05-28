@@ -31,7 +31,7 @@
 ## Practica 6 - MANEJO DE BASES DE DATOS CON PHP
 
 - [Enunciado](/practica-6/UTN_Entornos_Gr%C3%A1ficos_Pr%C3%A1ctica6.pdf)
-- [Resolucion]() - **NO HECHO**
+- [Resolucion](/practica-6/) 
 
 ## Practica 7 - MANEJO DE SESIONES Y COOKIES CON PHP
 
@@ -57,8 +57,8 @@
 | Practica 1 | 30/3  |    SI     |
 | Practica 2 | 06/4  |    SI     |
 | Practica 3 | 11/4  |    SI     |
-| Practica 4 | 09/5  |           |
-| Practica 5 | 16/5  |           |
+| Practica 4 | 09/5  |    SI     |
+| Practica 5 | 16/5  |    SI     |
 | Practica 6 | 01/6  |           |
 | Practica 7 | 01/6  |           |
 | Practica 8 | 25/4  |    SI     |
