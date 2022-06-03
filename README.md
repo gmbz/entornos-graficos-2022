@@ -36,7 +36,7 @@
 ## Practica 7 - MANEJO DE SESIONES Y COOKIES CON PHP
 
 - [Enunciado](/practica-7/UTN_Entornos_Gr%C3%A1ficos_Pr%C3%A1ctica7.pdf)
-- [Resolucion]() - **NO HECHO**
+- [Resolucion](/practica-7/)
 
 ## Practica 8 - ACCESIBILIDAD WEB
 
@@ -59,7 +59,7 @@
 | Practica 3 | 11/4  |    SI     |
 | Practica 4 | 09/5  |    SI     |
 | Practica 5 | 16/5  |    SI     |
-| Practica 6 | 01/6  |           |
-| Practica 7 | 01/6  |           |
+| Practica 6 | 08/6  |    SI     |
+| Practica 7 | 08/6  |    SI     |
 | Practica 8 | 25/4  |    SI     |
 | Practica 9 | 20/4  |    SI     |
